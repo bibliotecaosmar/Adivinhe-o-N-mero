@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Jogo - Cofre</title>
+        <script type="text/javascript" src="js/functions.js"></script>
+    </head>
+    <body>
+        <script>
+            senha = gerar();
+        </script>
+        <h2>Cofre</h2>
+        <h4 id="sucesso"></h4>
+        <label for="sequencia">Qual o código do cofre?</label><br>
+        <input type="text" id="sequencia" placeholder="0 0 0 0 0 0"><br>
+        <button type="button" onClick="destravar(senha);">Destravar</button>
+        <form action="cofre.html">
+            <button type="submit">Re-gerar</button>
+        </form>
+        <br>
+        <a href="index.html">voltar</a>
+    </body>
+</html>
